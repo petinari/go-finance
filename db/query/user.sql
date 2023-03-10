@@ -1,13 +1,13 @@
---name: CreateUser :one
+-- name: CreateUser :one
 insert into users (username, password, email)
 values ($1, $2, $3) returning *;
 
---name: GetUser :one
+-- name: GetUser :one
 select *
 from users
 where username = $1 limit 1;
 
---name: GetUserById :one
+-- name: GetUserById :one
 select *
 from users
-where id = $1 limit 1
+where id = $1 limit 1;
