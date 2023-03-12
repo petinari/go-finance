@@ -2,6 +2,7 @@ module roma/go-finance
 
 go 1.20
 
+
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/lib/pq v1.10.7 // indirect
